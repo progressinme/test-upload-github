@@ -1,0 +1,13 @@
+package com.progressinme;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ProgressinmeEcommerceCommonApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ProgressinmeEcommerceCommonApplication.class, args);
+	}
+
+}

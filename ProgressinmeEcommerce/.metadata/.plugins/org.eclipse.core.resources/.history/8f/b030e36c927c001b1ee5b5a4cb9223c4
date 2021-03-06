@@ -1,0 +1,10 @@
+package com.progressinme.spring.ecommerce.mongodb.model;
+
+import org.springframework.data.annotation.TypeAlias;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "categories")
+@TypeAlias(value = "Category")
+public class Category {
+
+}

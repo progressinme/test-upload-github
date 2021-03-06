@@ -1,0 +1,11 @@
+package com.progressinme.spring.ecommerce.mongodb.repositories;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.progressinme.spring.ecommerce.mongodb.model.Profile;
+import com.progressinme.spring.ecommerce.mongodb.model.Seller;
+
+public interface SellerRepository extends MongoRepository<Seller, String> {
+
+	public findByProfile (Profile profile);
+}

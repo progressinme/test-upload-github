@@ -1,0 +1,7 @@
+package com.progressinme.spring.ecommerce.mongodb.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface EcommerceRepository extends CrudRepository<T, ID>{
+
+}

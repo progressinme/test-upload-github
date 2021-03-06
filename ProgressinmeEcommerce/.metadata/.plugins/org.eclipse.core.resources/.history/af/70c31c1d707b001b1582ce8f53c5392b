@@ -1,0 +1,13 @@
+package com.progressinme.repository.impl;
+
+import com.progressinme.domain.Account;
+import com.progressinme.repository.AccountRepository;
+
+public class AccountRepositoryImpl implements AccountRepository {
+
+	@Override
+	public void update(Account account) {
+
+	}
+
+}

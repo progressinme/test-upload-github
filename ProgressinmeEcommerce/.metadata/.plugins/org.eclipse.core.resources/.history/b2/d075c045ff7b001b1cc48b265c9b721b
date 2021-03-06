@@ -1,0 +1,5 @@
+package com.progressinme.spring.ecommerce.mongodb.repository;
+
+public interface EcommerceRepository {
+
+}

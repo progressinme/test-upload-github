@@ -1,0 +1,36 @@
+package com.progressinme.spring.ecommerce.mongodb.dto;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.progressinme.spring.ecommerce.mongodb.model.Product;
+import com.progressinme.spring.ecommerce.mongodb.repository.ProductRepository;
+import com.progressinme.spring.ecommerce.mongodb.service.ProductService;
+
+@Service
+@Transactional
+public class ProductServiceImpl implements ProductService {
+	@Autowired
+	ProductRepository productRepository;
+	Product product;
+
+	@Override
+	public Iterable<Product> getAllProducts() {
+		return productRepository.findAll();
+	}
+
+	@Override
+	public Product getProduct(Long id) {
+		return productRepository.findById(id);
+	}
+
+	@Override
+	public Product save(Product product) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

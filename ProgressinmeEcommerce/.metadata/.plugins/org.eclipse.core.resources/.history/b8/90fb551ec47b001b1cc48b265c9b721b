@@ -1,0 +1,5 @@
+package com.progressinme.spring.data.mongodb.model;
+
+public class Tutorial {
+
+}

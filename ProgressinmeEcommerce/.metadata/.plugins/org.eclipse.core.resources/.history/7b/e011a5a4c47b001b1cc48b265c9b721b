@@ -1,0 +1,5 @@
+package com.progressinme.spring.data.mongodb.repository;
+
+public interface TutorialRepository {
+
+}

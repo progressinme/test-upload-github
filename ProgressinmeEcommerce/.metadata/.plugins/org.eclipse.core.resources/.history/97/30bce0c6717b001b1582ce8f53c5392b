@@ -1,0 +1,22 @@
+package com.progressinme.service.impl;
+
+import java.math.BigDecimal;
+
+import com.progressinme.domain.Account;
+import com.progressinme.service.AccountService;
+
+public class AccountServiceImpl implements AccountService {
+
+	@Override
+	public void transferMoney(Account source, Account destination, BigDecimal balance) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Account getAccount(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

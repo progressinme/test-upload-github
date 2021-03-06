@@ -1,0 +1,5 @@
+package com.progressinme.spring.ecommerce.mongodb.model;
+
+public class Product {
+	private String id;
+}

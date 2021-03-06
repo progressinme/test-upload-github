@@ -1,0 +1,5 @@
+package com.progressinme.service;
+
+public interface AccountService {
+	public void transferMoney();
+}

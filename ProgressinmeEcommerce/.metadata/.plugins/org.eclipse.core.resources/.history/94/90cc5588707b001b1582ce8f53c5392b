@@ -1,0 +1,26 @@
+package com.progressinme.repository.impl;
+
+import java.math.BigDecimal;
+import java.util.HashMap;
+import java.util.Map;
+
+import com.progressinme.domain.Account;
+import com.progressinme.repository.AccountRepository;
+
+public class AccountRepositoryImpl implements AccountRepository {
+
+	private Map<Long, Account> accountMap = new HashMap<Long, Account>();
+	{
+		Account account1 = new Account();
+		account1.setId(1L);
+		account1.setName("Budi");
+		account1.setAccountNumber("001");
+		account1.setBalance(new BigDecimal(100000));
+	}
+
+	@Override
+	public void update(Account account) {
+
+	}
+
+}

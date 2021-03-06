@@ -1,0 +1,7 @@
+package com.progressinme.service.impl;
+
+import com.progressinme.service.AccountService;
+
+public class AccountServiceImpl implements AccountService {
+
+}

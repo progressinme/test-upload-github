@@ -1,0 +1,9 @@
+package com.progressinme.spring.data.mongodb.repository;
+
+import java.util.List;
+
+import com.progressinme.spring.data.mongodb.model.Tutorial;
+
+public interface TutorialRepository {
+List<Tutorial>
+}

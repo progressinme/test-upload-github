@@ -1,0 +1,14 @@
+package com.progressinme.spring.ecommerce.mongodb.model;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
+
+public class Seller {
+	@Id
+	private String id;
+
+	@Indexed(unique = true)
+	private String accountId;
+
+	private Profile profile;
+}

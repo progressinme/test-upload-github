@@ -1,0 +1,9 @@
+package com.progressinme.service;
+
+import java.math.BigDecimal;
+
+import com.progressinme.domain.Account;
+
+public interface AccountService {
+	public void transferMoney(Account source, Account destination, BigDecimal balance);
+}

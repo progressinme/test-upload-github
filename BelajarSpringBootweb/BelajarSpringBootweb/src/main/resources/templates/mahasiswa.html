@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Informasi Mahasiswa</title>
+
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{css/bootstrap.min.css}" rel="stylesheet" media="screen" />
+    <link
+      th:href="@{css/fontawesome.min.css}"
+      rel="stylesheet"
+      media="screen"
+    />
+    <link th:href="@{css/solid.min.css}" rel="stylesheet" media="screen" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link
+      th:href="@{css/starter-template.css}"
+      rel="stylesheet"
+      media="screen"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExampleDefault"
+          aria-controls="navbarsExampleDefault"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown01"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Dropdown</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <h1>Data Mahasiswa</h1>
+      <div th:if="${not #lists.isEmpty(mahasiswa)}">
+        <table class="table table-striped">
+          <tr>
+            <th>Nama</th>
+            <th>Nim</th>
+            <th>Jurusan</th>
+            <th>Action</th>
+          </tr>
+          <tr th:each="mahasiswas : ${mahasiswa}">
+            <td th:text="${mahasiswas.nama}"></td>
+            <td th:text="${mahasiswas.nim}"></td>
+            <td th:text="${mahasiswas.jurusan}"></td>
+            <td>
+              <a th:href="${'/mahasiswa/edit/'+mahasiswas.id}" class="btn btn-primary">
+                <i class="fas fa-edit"></i>
+              </a>
+
+              <a th:href="${'/mahasiswa/delete/'+mahasiswas.id}" class="btn btn-danger">
+                <i class="fas fa-trash-alt"></i>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <a href="/mahasiswa/create" class="btn btn-primary">Add New</a>
+      </div>
+    </main>
+
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{/js/fontawesome.min.js}"></script>
+    <script th:src="@{/js/solid.min.js}"></script>
+  </body>
+</html>

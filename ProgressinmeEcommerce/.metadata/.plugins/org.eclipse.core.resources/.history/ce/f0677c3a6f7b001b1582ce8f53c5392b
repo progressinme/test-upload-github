@@ -1,0 +1,5 @@
+package com.progressinme.domain;
+
+public class Account {
+
+}

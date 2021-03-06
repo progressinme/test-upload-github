@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SpringMongoDBEcommerce"/>
+<aop-project name="spring-boot-data-mongodb"/>
+<aop-project name="spring-boot-ecommerce-mongodb"/>
+</aop-reference-model>

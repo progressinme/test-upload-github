@@ -1,0 +1,7 @@
+package com.progressinme.repository.impl;
+
+import com.progressinme.repository.AccountRepository;
+
+public class AccountRepositoryImpl implements AccountRepository {
+
+}

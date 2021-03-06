@@ -1,0 +1,10 @@
+package com.progressinme.spring.ecommerce.mongodb.model;
+
+import org.springframework.data.annotation.Id;
+
+public class Seller {
+	@Id
+	private String id;
+
+	private String accountId;
+}

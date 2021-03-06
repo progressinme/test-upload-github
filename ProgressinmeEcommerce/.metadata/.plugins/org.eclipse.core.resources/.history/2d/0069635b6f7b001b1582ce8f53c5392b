@@ -1,0 +1,10 @@
+package com.progressinme.domain;
+
+import java.math.BigDecimal;
+
+public class Account {
+	private Long id;
+	private String accountNumber;
+	private String name;
+	private BigDecimal balance;
+}

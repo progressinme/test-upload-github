@@ -1,0 +1,13 @@
+package com.progressinme.spring.ecommerce.mongodb;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class SpringBootEcommerceMongodbApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

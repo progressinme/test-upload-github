@@ -1,0 +1,21 @@
+package com.progressinme.repository.impl;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.progressinme.domain.Account;
+import com.progressinme.repository.AccountRepository;
+
+public class AccountRepositoryImpl implements AccountRepository {
+
+	private Map<Long, Account> accountMap = new HashMap<Long, Account>();
+	{
+		Account account1 = new Account();
+	}
+
+	@Override
+	public void update(Account account) {
+
+	}
+
+}
